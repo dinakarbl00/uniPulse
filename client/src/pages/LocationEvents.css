@@ -1,0 +1,172 @@
+.location-events-page {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 24px 70px;
+    background-color: whitesmoke;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .back-link {
+    display: block;
+    width: fit-content;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    color: royalblue;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .location-header {
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    padding: 42px;
+    border-radius: 20px;
+    background-color: midnightblue;
+    color: white;
+  }
+  
+  .location-label {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: steelblue;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .location-header h1 {
+    margin: 18px 0 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: none;
+    text-shadow: none;
+  }
+  
+  .location-header p {
+    max-width: 700px;
+    margin: 0;
+    color: gainsboro;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .events-section {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .events-section h2 {
+    margin: 0 0 24px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: none;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  
+  .event-card {
+    min-height: 220px;
+    padding: 28px;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0 6px 18px gainsboro;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .event-date {
+    margin: 0 0 14px;
+    color: royalblue !important;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .event-card h3 {
+    margin: 0 0 12px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    text-transform: none;
+  }
+  
+  .event-card p {
+    margin-top: 0;
+    color: dimgray;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .event-time {
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+    color: midnightblue !important;
+    font-weight: bold;
+  }
+  
+  .loading {
+    padding: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: midnightblue;
+  }
+
+  .countdown {
+    margin-top: 18px !important;
+    padding-top: 16px;
+    border-top: 1px solid gainsboro;
+    color: royalblue !important;
+    font-weight: bold;
+  }
+  
+  .passed-event {
+    background-color: gainsboro;
+    opacity: 0.7;
+  }
+  
+  .passed-event h3 {
+    text-decoration: line-through;
+  }
+  
+  .passed-event .event-date,
+  .passed-event .event-time,
+  .passed-event .countdown {
+    color: dimgray !important;
+  }
+  
+  @media (max-width: 700px) {
+    .location-events-page {
+      padding: 28px 18px 50px;
+    }
+  
+    .location-header {
+      padding: 30px 24px;
+    }
+  
+    .location-header h1 {
+      font-size: 36px;
+    }
+  
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  }

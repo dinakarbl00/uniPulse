@@ -1,0 +1,137 @@
+.locations-page {
+    min-height: 100vh;
+    background-color: whitesmoke;
+    color: midnightblue;
+  }
+  
+  .hero {
+    padding: 90px 24px 70px;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+  }
+  
+  .eyebrow {
+    margin: 0 0 14px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: lightblue;
+  }
+  
+  .hero h1 {
+    margin: 0;
+    font-size: 64px;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    margin: 18px auto 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: gainsboro;
+  }
+  
+  .locations-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 24px;
+  }
+  
+  .section-heading {
+    margin-bottom: 30px;
+  }
+  
+  .section-heading h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
+  
+  .section-heading p {
+    margin: 0;
+    color: dimgray;
+  }
+  
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .location-card {
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    background-color: white;
+    color: midnightblue;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px lightgray;
+  }
+  
+  .location-icon {
+    display: inline-block;
+    margin-bottom: 28px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: steelblue;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .location-card h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+  }
+  
+  .location-card p {
+    min-height: 48px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+    color: dimgray;
+  }
+  
+  .view-events {
+    font-weight: bold;
+    color: royalblue;
+  }
+  
+  .loading {
+    padding: 50px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 700px) {
+    .hero {
+      padding: 65px 20px 50px;
+    }
+  
+    .hero h1 {
+      font-size: 46px;
+    }
+  
+    .location-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .all-events-link {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: midnightblue;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .all-events-link:hover {
+    background-color: aliceblue;
+  }

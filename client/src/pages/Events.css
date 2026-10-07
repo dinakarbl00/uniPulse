@@ -1,0 +1,148 @@
+.all-events-page {
+    min-height: 100vh;
+    padding: 45px 24px 70px;
+    background-color: whitesmoke;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .events-top {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+  }
+  
+  .events-back {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: royalblue;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .events-back:hover {
+    text-decoration: underline;
+  }
+  
+  .events-top h1 {
+    margin: 0 0 10px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-transform: none;
+  }
+  
+  .events-top p {
+    margin: 0;
+    color: dimgray;
+    font-size: 18px;
+  }
+  
+  .filter-area {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+  }
+  
+  .filter-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .filter-area select {
+    width: 240px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    color: midnightblue;
+    font-size: 15px;
+  }
+  
+  .all-events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: auto;
+    gap: 22px;
+  }
+  
+  .all-event-card {
+    padding: 28px;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0 6px 18px gainsboro;
+  }
+  
+  .all-event-location {
+    display: inline-block;
+    margin: 0 0 16px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: steelblue;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .all-event-date {
+    margin: 0 0 8px;
+    color: royalblue;
+    font-weight: bold;
+  }
+  
+  .all-event-card h2 {
+    margin: 0 0 12px;
+    color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    text-transform: none;
+  }
+  
+  .all-event-description {
+    color: dimgray;
+    line-height: 1.6;
+  }
+  
+  .all-event-time {
+    margin-bottom: 0;
+    color: midnightblue;
+    font-weight: bold;
+  }
+
+  .all-event-countdown {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid gainsboro;
+    color: royalblue;
+    font-weight: bold;
+  }
+  
+  .passed-all-event {
+    background-color: gainsboro;
+    opacity: 0.7;
+  }
+  
+  .passed-all-event h2 {
+    text-decoration: line-through;
+  }
+  
+  .passed-all-event .all-event-date,
+  .passed-all-event .all-event-time,
+  .passed-all-event .all-event-countdown {
+    color: dimgray;
+  }
+  
+  @media (max-width: 700px) {
+    .events-top h1 {
+      font-size: 38px;
+    }
+  
+    .filter-area select {
+      width: 100%;
+    }
+  
+    .all-events-grid {
+      grid-template-columns: 1fr;
+    }
+  }
